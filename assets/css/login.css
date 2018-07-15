@@ -73,7 +73,7 @@ i{
   display: inline-block !important;
   padding-left: 5px;
   padding-top: 2px;
-  color: hsl(9, 40%, 60%);
+  color: gray;
   }
   
   .mainLoginInput::-moz-placeholder  { 
@@ -84,7 +84,7 @@ i{
   display: inline-block !important;
   padding-left: 5px;
   padding-top: 2px;
-  color: hsl(9, 40%, 60%);
+  color:black;
   }
   
   .mainLoginInput:-ms-input-placeholder  { 
@@ -95,8 +95,17 @@ i{
   display: inline-block !important;
   padding-left: 5px;
   padding-top: 2px;
-  color: hsl(9, 40%, 60%);
+  color:black;
   }
   .fa-user{
-      text-align: center
+    text-align: center;
+    font-size: 1.5em;
   }
+  .fa-lock{
+      text-align: center;
+      font-size: 1.5em;
+  }
+  .col-lg-4 {
+      text-align: center;
+  }
+ 
