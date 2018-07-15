@@ -26,3 +26,7 @@ function loginWithFirebase(){
             console.log("Error de firebase > Mensaje > "+error.message); //error.message nos mostrará el mensaje de firebase del mismo error
         });
 }
+/*register with Google
+function registerWithGoogle{
+    const provider = new firebase.auth.GoogleAuthProvider();
+}*/

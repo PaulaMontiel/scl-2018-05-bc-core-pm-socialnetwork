@@ -1,4 +1,13 @@
 h1{
-color: aqua;
+color:black;
 text-align: center;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#loggedOut{
+    padding: 50px;
 }
