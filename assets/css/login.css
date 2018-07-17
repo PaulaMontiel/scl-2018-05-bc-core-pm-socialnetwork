@@ -73,7 +73,7 @@ i{
   display: inline-block !important;
   padding-left: 5px;
   padding-top: 2px;
-  color: hsl(9, 40%, 60%);
+  color: gray;
   }
   
   .mainLoginInput::-moz-placeholder  { 
@@ -84,7 +84,7 @@ i{
   display: inline-block !important;
   padding-left: 5px;
   padding-top: 2px;
-  color: hsl(9, 40%, 60%);
+  color:black;
   }
   
   .mainLoginInput:-ms-input-placeholder  { 
@@ -95,8 +95,49 @@ i{
   display: inline-block !important;
   padding-left: 5px;
   padding-top: 2px;
-  color: hsl(9, 40%, 60%);
+  color:black;
   }
   .fa-user{
-      text-align: center
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .fa-lock{
+      text-align: center;
+      font-size: 1.5em;
+  }
+  .col-lg-4 {
+      text-align: center;
+  }
+  .social-login-btn {
+    margin: 5px;
+    width: 80%;
+    font-size: 120%;
+    padding: 0;
+  }
+  
+  .social-google {
+    background-color: #da573b;
+    border-color: #be5238;
+  }
+  .social-google:hover{
+    background-color: #be5238;
+    border-color: #9b4631;
+  }
+  
+  .social-twitter {
+    background-color: #1daee3;
+    border-color: #3997ba;
+  }
+  .social-twitter:hover {
+    background-color: #3997ba;
+    border-color: #347b95;
+  }
+  
+  .social-facebook {
+    background-color: #4c699e;
+    border-color: #47618d;
+  }
+  .social-facebook:hover {
+    background-color: #47618d;
+    border-color: #3c5173;
   }
