@@ -14,6 +14,14 @@ invertir. Estos son:
 * Salud
 * Energías Renovables
 
+##CareKids
+
+Cuidar nuestra salud debe ser una prioridad durante cualquier etapa de nuestra vida. Esto nos ayudará a tener una calidad de vida excelente en todos los niveles y edades. Según la definición elaborada por la Organización Mundial de la Salud (OMS), “la salud es un estado completo de bienestar físico, mental y social, y no solamente la ausencia de afecciones o enfermedades”.
+
+CareKids es una red social enfocada a compartir informacion sobre la salud integral de los ninos, 
+
+
+
 ## Introducción
 
 Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, las redes sociales han
