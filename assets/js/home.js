@@ -12,6 +12,9 @@ $(document).ready(function() {
 });
 
 
+
+
+/*
 function saveComment(){
  //validar input
  //funcion guardar datos
@@ -35,6 +38,9 @@ function saveComment(){
  }
 }
 
+*/
+
+
 
 
 //creo constante para llamar al boton "btn"
@@ -46,6 +52,12 @@ boton.addEventListener("click",() => {
     //limpio lo que habia en la caja de texto
     document.getElementById("comment").value = "";
     //llamo a un  elemnto que vive en html para que sea padre de lo siguente que hare en JS
+
+    if (comments.length === 0 || comments === null){
+        alert ("Debes ingresar un mensaje");
+        return false;
+      }
+
     const cont = document.getElementById("cont");
     //creo un elemento en JS
     const newComment = document.createElement("div");
@@ -73,8 +85,6 @@ boton.addEventListener("click",() => {
     newComment.appendChild(trash);
     newComment.appendChild(contenedorElemento);
     cont.appendChild(newComment);
-
-
 
     //para poner el corazon rojo
     heart.addEventListener("click", ()=> {
