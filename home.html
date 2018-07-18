@@ -18,11 +18,11 @@
                 <button class="btn-bg">
                     <a class="navbar-brand bg-navgreen " href="#"><i class="fas fa-user-circle"></i></a>
                 </button>
-                
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                  
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
@@ -33,7 +33,7 @@
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            
+
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -48,14 +48,68 @@
                     </ul>
                 </div>
             </nav>
-        </header>      
-     <!--NavBar-->
-    
-     
+        </header>
+<br>
+
+<!-- Sección textarea, botón y contenedor mensajes -->
+	<section class="center">
+		<div class="container">
+			<textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
+			<button type="submit" id="btn"><i class="fa fa-plus" aria-hidden="true"></i> Agregar</button>
+			<!-- contenedor comentarios -->
+			<div id="cont"></div>
+		</div>
+	</section>
+
+
+
+     <!--caja de comentarios-->
+          <div class="row">
+               <ul class="comments-list">
+           			<li>
+           				<div class="comment-main-level" >
+                     <div class="col-sm-12">
+                     <!-- Avatar
+           					<div class="comment-avatar" class="col-xs-6"><img src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/29598069_923498544491220_7607067312275824752_n.jpg?_nc_cat=0&oh=8df4665e2d8af1288d921a7b68d5c9d7&oe=5BE0043D" alt=""></div>
+                     -->
+                   	<!-- Contenedor del Comentario -->
+           				<div class="comment-box" class="col-xs-12 col-sm-6 col-md-8">
+           						<div class="comment-head">
+           							<h6 class="comment-name">Laboratoria</a></h6>
+                     <!-- Iconos-->
+                       	<i class="fa fa-reply"></i>
+           							<i class="fa fa-heart"></i>
+           						</div>
+                             <!-- Caja de comentario -->
+                                   <div class="comment-content">
+                                           <textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
+                                           <br>
+                                              <!-- contenedor comentarios -->
+                                                     <div class="row">
+                                                         <div class="col-12" id="cont">
+                                                             <!-- comwntarios de los usuarios -->
+                                                         </div>   </div>     </div>  						  </div>
+           					</div>
+           				</div>      </div>      </div>
+     <button type="submit" id="btn" class="btn btn-primary mb-2">Enviar</button>
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="fontawesome-free-5.1.0-web/js/all.js"></script>
-    <script src="assets/js/home.js"></script>
+  <!--  <script src="fontawesome-free-5.1.0-web/js/all.js"></script>
+    <script type="text/javascript" src="assets/js/home.js"></script>-->
+
+    <!-- Script Files -->
+    <script src="https://use.fontawesome.com/7873633050.js"></script>
+    <script type="text/javascript" src="assets/js/home.js"></script>
+
+  <!-- Script alertify -->
+    <link href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+
 </body>
 </html>
