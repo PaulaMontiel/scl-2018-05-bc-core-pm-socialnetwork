@@ -1,3 +1,4 @@
+
 $(function() {
     var accordion = function(el, multiple) {
 		this.el = el || {};
@@ -20,12 +21,7 @@ $(function() {
 		if (!e.data.multiple) {
 			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
 		};
-	}	
+	}
 
 	var accordion = new accordion($('#accordion'), false);
 });
-
-
-
-
-
