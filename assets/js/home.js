@@ -10,10 +10,6 @@ $(document).ready(function() {
 		return false;
 	});
 });
-
-
-
-
 /*
 function saveComment(){
  //validar input

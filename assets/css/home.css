@@ -1,9 +1,9 @@
 .navbar{
-    background-color: #3dacab !important;
-    color: whitesmoke;
+  background-color: #85D1AA !important;
+  color: whitesmoke;
 }
 body{
-    background-color: #3B3938;
+  background-color: #C8DBD2;
 
 }
 #sidebar {
@@ -112,27 +112,27 @@ body{
 }
 
 .collapse.show {
-  visibility: visible;
+visibility: visible;
 }
 .collapsing {
-  visibility: visible;
-  height: 0;
-  -webkit-transition-property: height, visibility;
-  transition-property: height, visibility;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+visibility: visible;
+height: 0;
+-webkit-transition-property: height, visibility;
+transition-property: height, visibility;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
 }
 .collapsing.width {
-  -webkit-transition-property: width, visibility;
-  transition-property: width, visibility;
-  width: 0;
-  height: 100%;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+-webkit-transition-property: width, visibility;
+transition-property: width, visibility;
+width: 0;
+height: 100%;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
 }
 .btn-bg{
-    background-color: #3dacab;
-    border: none;
+  background-color: #85D1AA;
+  border: none;
 
 }
 .fa-user-circle{
