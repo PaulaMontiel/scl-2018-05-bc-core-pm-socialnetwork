@@ -1,4 +1,48 @@
-validarMail = () => {
+function registerWithFirebase(){
+    const emailValue = email.value;
+    const passwordValue = pwd.value;
+    
+    firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
+          .then(()=>{
+               console.log("Usuario creado con éxito");
+               registerData(emailValue);
+           })
+           .catch((error)=>{
+               console.log("Error de firebase > Código > "+error.code); //error.code nos mostrará el código de error para informarnos qué pasó
+               console.log("Error de firebase > Mensaje > "+error.message); //error.message nos mostrará el mensaje de firebase del mismo error
+            });
+}
+
+ let textNombre = document.getElementById('nombre');
+ let textApelldo = document.getElementById('Apellido');
+ let textEmail = document.getElementById('email');
+ let botoncillo = document.getElementById('register');
+ let users = document.getElementById('usuarios');
+ 
+ let registerData = (data) => {
+     console.log('entre')
+    let name = textNombre.value;
+    let firtsName = textApelldo.value;
+    let emaila = data;
+   
+    firebase.database().ref('reg').push({
+        nombre : name,
+        apellido : firtsName,
+        mail : emaila
+   
+    });
+ } 
+
+
+
+
+
+
+
+
+
+
+/*validarMail = () => {
     let emailUser = document.getElementById('email').value;
     emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     if (emailUser === '') {
@@ -43,3 +87,4 @@ function compararPassword() {
     }
 
 }
+*/
