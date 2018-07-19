@@ -1,0 +1,86 @@
+.navbar{
+    background-color: #85D1AA !important;
+    color: whitesmoke;
+}
+body{
+    background-color: #C8DBD2;
+
+}
+.collapse.show {
+  visibility: visible;
+}
+.collapsing {
+  visibility: visible;
+  height: 0;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.collapsing.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: 100%;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.btn-bg{
+    background-color: #85D1AA;
+    border: none;
+
+}
+.fa-user-circle{
+    font-size: 1.5em;
+    
+}
+.nav-link{
+    padding: 1.5em;
+    font-size: 20px;
+    color:white;
+
+}
+h4{
+  color: #4A4F53;
+  padding: 1.5em;
+}
+#custom-search-input {
+    float: none;
+    width: 80%;
+    margin:0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#custom-search-input .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#85D1AA;
+}
+
+.search-query:focus + button {
+    z-index: 3;   
+}
