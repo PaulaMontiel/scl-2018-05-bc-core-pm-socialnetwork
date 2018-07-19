@@ -1,58 +1,48 @@
-function registerWithFirebase(){
+function registerWithFirebase() {
     const emailValue = email.value;
     const passwordValue = pwd.value;
-    
+
     firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
-          .then(()=>{
-               console.log("Usuario creado con éxito");
-               //registerData(emailValue);
-               writeUserData(userId, name,firtsName,emaila);
-               console.log("entre");
-           })
-           .catch((error)=>{
-               console.log("Error de firebase > Código > "+error.code); //error.code nos mostrará el código de error para informarnos qué pasó
-               console.log("Error de firebase > Mensaje > "+error.message); //error.message nos mostrará el mensaje de firebase del mismo error
-            });
+        .then(() => {
+            console.log("Usuario creado con éxito");
+            registerData(emailValue);
+        })
+        .catch((error) => {
+            console.log("Error de firebase > Código > " + error.code); //error.code nos mostrará el código de error para informarnos qué pasó
+            console.log("Error de firebase > Mensaje > " + error.message); //error.message nos mostrará el mensaje de firebase del mismo error
+        });
 }
- let textNombre = document.getElementById('nombre');
- let textApelldo = document.getElementById('Apellido');
- let textEmail = document.getElementById('email');
- let botoncillo = document.getElementById('register');
- let users = document.getElementById('usuarios');
- 
- /*let registerData = (data) => {
-     console.log('entre')
-    let name = textNombre.value;
-    let firtsName = textApelldo.value;
-    let emaila = data;
-   
-    firebase.database().ref('reg').push({
-        nombre : name,
-        apellido : firtsName,
-        mail : emaila
-   
+
+function ObtenerUser(){
+    firebase.auth().onAuthStateChanged(function (user) {
+        console.log('entre')
+        if (user) {
+        console.log('User is signed in');
+        } else {
+            console.log('No user is signed in.');
+        }
     });
- } */
+}
 
- function writeUserData(userId, name,firtsName,emaila) {
-     console.log("entre");
+let textNombre = document.getElementById('nombre');
+let textApelldo = document.getElementById('Apellido');
+let textEmail = document.getElementById('email');
+let botoncillo = document.getElementById('register');
+let users = document.getElementById('usuarios');
 
-    let userId = firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
-        // Send token to your backend via HTTPS
-        // ...
-      }).catch(function(error) {
-        // Handle error
-      });
+let registerData = (data) => {
+    console.log('entre')
     let name = textNombre.value;
     let firtsName = textApelldo.value;
     let emaila = data;
-    firebase.database().ref('users/' + userId).set({
-      username: name,
-      apellido:firtsName,
-      email: emaila
-  });
- }
-  
+
+    firebase.database().ref('users').push({
+        nombre: name,
+        apellido: firtsName,
+        mail: emaila
+
+    });
+}
 
 
 
