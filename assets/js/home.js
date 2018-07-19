@@ -1,3 +1,4 @@
+//NavBar
 $(document).ready(function() {
     $('a[href="#navbar-more-show"], .navbar-more-overlay').on('click', function(event) {
 		event.preventDefault();
@@ -10,6 +11,7 @@ $(document).ready(function() {
 		return false;
 	});
 });
+//////////////////////////////////////////////
 /*
 function saveComment(){
  //validar input

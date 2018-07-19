@@ -1,3 +1,6 @@
+document.getElementById("btn-signup").onclick = function () {
+    location.href = "home.html";
+};
 function registerWithFirebase(){
     const emailValue = email.value;
     const passwordValue = pwd.value;
