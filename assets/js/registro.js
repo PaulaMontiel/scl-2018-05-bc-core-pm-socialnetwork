@@ -1,61 +1,58 @@
+
 document.getElementById("btn-signup").onclick = function () {
     location.href = "home.html";
 };
-function registerWithFirebase(){
+
+function registerWithFirebase() {
+
     const emailValue = email.value;
     const passwordValue = pwd.value;
-    
+
     firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
-          .then(()=>{
-               console.log("Usuario creado con éxito");
-               //registerData(emailValue);
-               writeUserData(userId, name,firtsName,emaila);
-               console.log("entre");
-           })
-           .catch((error)=>{
-               console.log("Error de firebase > Código > "+error.code); //error.code nos mostrará el código de error para informarnos qué pasó
-               console.log("Error de firebase > Mensaje > "+error.message); //error.message nos mostrará el mensaje de firebase del mismo error
-            });
+        .then(() => {
+            console.log("Usuario creado con éxito");
+            registerData(emailValue);
+        })
+        .catch((error) => {
+            console.log("Error de firebase > Código > " + error.code); //error.code nos mostrará el código de error para informarnos qué pasó
+            console.log("Error de firebase > Mensaje > " + error.message); //error.message nos mostrará el mensaje de firebase del mismo error
+        });
 }
- let textNombre = document.getElementById('nombre');
- let textApelldo = document.getElementById('Apellido');
- let textEmail = document.getElementById('email');
- let botoncillo = document.getElementById('register');
- let users = document.getElementById('usuarios');
- 
- /*let registerData = (data) => {
-     console.log('entre')
-    let name = textNombre.value;
-    let firtsName = textApelldo.value;
-    let emaila = data;
-   
-    firebase.database().ref('reg').push({
-        nombre : name,
-        apellido : firtsName,
-        mail : emaila
-   
-    });
- } */
 
- function writeUserData(userId, name,firtsName,emaila) {
-     console.log("entre");
+function ObtenerUser(emailVerified){
+    var user = firebase.auth().currentUser;
+var name, email, photoUrl, uid, emailVerified;
 
-    let userId = firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
-        // Send token to your backend via HTTPS
-        // ...
-      }).catch(function(error) {
-        // Handle error
-      });
-    let name = textNombre.value;
-    let firtsName = textApelldo.value;
-    let emaila = data;
-    firebase.database().ref('users/' + userId).set({
-      username: name,
-      apellido:firtsName,
-      email: emaila
-  });
+if (user != null) {
+  name = user.displayName;
+  email = user.email;
+  photoUrl = user.photoURL;
+  emailVerified = user.emailVerified;
+  uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                   // this value to authenticate with your backend server, if
+                   // you have one. Use User.getToken() instead.
  }
-  
+}
+
+let textNombre = document.getElementById('nombre');
+let textApelldo = document.getElementById('Apellido');
+let textEmail = document.getElementById('email');
+let botoncillo = document.getElementById('register');
+let users = document.getElementById('usuarios');
+
+let registerData = (data) => {
+    console.log('entre')
+    let name = textNombre.value;
+    let firtsName = textApelldo.value;
+    let emaila = data;
+
+    firebase.database().ref('users').push({
+        nombre: name,
+        apellido: firtsName,
+        mail: emaila
+
+    });
+}
 
 
 
