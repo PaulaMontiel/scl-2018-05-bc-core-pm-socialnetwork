@@ -23,7 +23,7 @@ body {
     position: absolute;
     width: 100%;
     text-shadow: 1px 1px 2px #000000;
-    
+
 background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, #2d2c41 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, #2d2c41 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #2d2c41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -124,7 +124,7 @@ a:focus {
 
 
 .btn-o {
-    
+
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 2px;
@@ -137,7 +137,7 @@ a:focus {
     padding: 5px 11px;
     text-decoration: none !important;
     text-transform: uppercase;
-    
+
    background-color: rgba(255, 255, 255, 0.1);
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -378,18 +378,52 @@ h1 a {
     z-index: 10;
 }
 
+* {
+ 	margin: 0;
+ 	padding: 0;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+
+ a {
+ 	color: #03658c;
+ 	text-decoration: none;
+ }
+
+ul {
+	list-style-type: none;
+}
+
+body {
+	font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+	background: #dee1e3;
+}
 
 
 
 
 
+/** ====================
+ * Lista de Comentarios
+ =======================*/
+.comments-container {
+	margin: 60px auto 15px;
+	width: 768px;
+}
 
+.comments-container h1 {
+	font-size: 36px;
+	color: #283035;
+	font-weight: 400;
+}
 
+.comments-container h1 a {
+	font-size: 18px;
+	font-weight: 700;
+}
 
-
-
-
-
-
-
-
+.comments-list {
+	margin-top: 30px;
+	position: relative;
+}
