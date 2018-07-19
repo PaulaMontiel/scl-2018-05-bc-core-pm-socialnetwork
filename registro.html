@@ -19,7 +19,9 @@
         <label for="email" class="mr-sm-2">Email address:</label>
         <input id="email" type="email" class="validate"  onblur="validarMail()" required></input>>
         <label for="pwd" class="mr-sm-2">Password:</label>
-        <input type="password" id="passwd" class="validate" onblur="validarLargo()" required></input>
+        <input type="password" id="passwd" class="validate" onblur="validarClaves()" required></input>
+        <label for="pwd" class="mr-sm-2">Password:</label>
+        <input type="password" id="passwd2" class="validate" onblur="compararPassword()" required></input>
         <div class="form-check mb-2 mr-sm-2">
         </div>
         <button type="submit" class="btn btn-primary mb-2" onclick="RegisterUser">Submit</button>
