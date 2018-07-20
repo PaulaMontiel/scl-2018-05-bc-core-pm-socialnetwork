@@ -498,3 +498,35 @@ p {
 	display: inline-block;
 	margin-left: 0.5em;
 }
+
+#preview {
+  display:block;
+  max-width: 200px;
+  height: auto;
+}
+
+
+/*Dar estilo al input donde se carga la imagen
+
+input[type=”file”]#nuestroinput {
+ width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+ }
+
+ label[for="estiloInput"] {
+ font-size: 14px;
+ font-weight: 600;
+ color: #fff;
+ background-color: #106BA0;
+ display: inline-block;
+ transition: all .5s;
+ cursor: pointer;
+ padding: 15px 40px !important;
+ text-transform: uppercase;
+ width: fit-content;
+ text-align: center;
+ }*/
