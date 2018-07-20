@@ -1,0 +1,40 @@
+.navbar{
+    background-color: #85D1AA !important;
+    color: whitesmoke;
+  }
+  body{
+    background-color: #C8DBD2;
+  
+  }
+  .collapse.show {
+  visibility: visible;
+  }
+  .collapsing {
+  visibility: visible;
+  height: 0;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  }
+  .collapsing.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: 100%;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  }
+  .btn-bg{
+    background-color: #85D1AA;
+    border: none;
+  
+  }
+  .fa-home{
+    padding: 0.5em;
+      color: white;
+      font-size: 2em;
+  
+  }
+  
+  
