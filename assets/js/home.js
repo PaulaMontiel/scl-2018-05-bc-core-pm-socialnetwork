@@ -1,4 +1,3 @@
-
 //NavBar
 $(document).ready(function() {
     $('a[href="#navbar-more-show"], .navbar-more-overlay').on('click', function(event) {
@@ -12,7 +11,6 @@ $(document).ready(function() {
 		return false;
 	});
 });
-
 
 
 

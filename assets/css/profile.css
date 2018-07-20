@@ -77,9 +77,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
    opacity: 0.9;
   }
 .edit-pic a:focus {
-   background:#b63b4d;
+   background:#85D1AA;
     color: #fff;
-    border: 1px solid #b63b4d;
+    border: 1px solid #85D1AA;
 }
 a:focus {
     outline: none;
@@ -148,11 +148,11 @@ a:focus {
     color: #fff !important;
   }
 .btn-o:focus {
-   background:#b63b4d;
+   background:#85D1AA;
     color: #fff;
-    border: 1px solid #b63b4d;
+    border: 1px solid #85D1AA;
 }
-.submenu .iamgurdeeposahan {
+.submenu .laboratoria {
     background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0 !important;
     border-radius: 50%;
     height: 60px;
@@ -184,7 +184,7 @@ ul {
 }
 
 a {
-	color: #b63b4d;
+	color: #85D1AA;
 	text-decoration: none;
 }
 
@@ -200,7 +200,7 @@ h1 {
  }
 
 h1 a {
- 	color: #c12c42;
+ 	color: #85D1AA;
  	font-size: 16px;
  }
 
@@ -250,11 +250,11 @@ h1 a {
 }
 
 .accordion li.open .link {
-	color: #b63b4d;
+	color: #85D1AA;
 }
 
 .accordion li.open i {
-	color: #b63b4d;
+	color: #85D1AA;
 }
 .accordion li.open i.fa-chevron-down {
 	-webkit-transform: rotate(180deg);
@@ -267,17 +267,17 @@ h1 a {
 /**
  * Submenu
  -----------------------------*/
- .submenu {
+.submenu {
  	display: none;
  	background: #444359;
  	font-size: 14px;
- }
+}
 
- .submenu li {
+.submenu li {
  	border-bottom: 1px solid #4b4a5e;
- }
+}
 
- .submenu a {
+.submenu a {
  	display: block;
  	text-decoration: none;
  	color: #d9d9d9;
@@ -286,27 +286,12 @@ h1 a {
  	-webkit-transition: all 0.25s ease;
  	-o-transition: all 0.25s ease;
  	transition: all 0.25s ease;
- }
+}
 
- .submenu a:hover {
- 	background: #b63b4d;
+.submenu a:hover {
+ 	background: #85D1AA;
  	color: #FFF;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 .nav.navbar-nav .dropdown-toggle {
     padding: 0 !important;
@@ -386,7 +371,7 @@ h1 a {
  	box-sizing: border-box;
  }
 
- a {
+a {
  	color: #03658c;
  	text-decoration: none;
  }

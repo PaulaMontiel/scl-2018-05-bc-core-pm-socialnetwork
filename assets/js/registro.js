@@ -1,37 +1,41 @@
-function registerWithFirebase(){
+
+/*document.getElementById("btn-signup").onclick = function () {
+    location.href = "home.html";*/
+
+function registerWithFirebase() {
+
     const emailValue = email.value;
     const passwordValue = pwd.value;
-    
+
     firebase.auth().createUserWithEmailAndPassword(emailValue, passwordValue)
-          .then(()=>{
-               console.log("Usuario creado con éxito");
-               registerData(emailValue);
-           })
-           .catch((error)=>{
-               console.log("Error de firebase > Código > "+error.code); //error.code nos mostrará el código de error para informarnos qué pasó
-               console.log("Error de firebase > Mensaje > "+error.message); //error.message nos mostrará el mensaje de firebase del mismo error
-            });
+        .then(() => {
+            console.log("Usuario creado con éxito");
+            registerData(emailValue);
+        })
+        .catch((error) => {
+            console.log("Error de firebase > Código > " + error.code); //error.code nos mostrará el código de error para informarnos qué pasó
+            console.log("Error de firebase > Mensaje > " + error.message); //error.message nos mostrará el mensaje de firebase del mismo error
+        });
 }
 
- let textNombre = document.getElementById('nombre');
- let textApelldo = document.getElementById('Apellido');
- let textEmail = document.getElementById('email');
- let botoncillo = document.getElementById('register');
- let users = document.getElementById('usuarios');
- 
- let registerData = (data) => {
-     console.log('entre')
+let textNombre = document.getElementById('firstname');
+let textApelldo = document.getElementById('lastname');
+let textEmail = document.getElementById('email');
+let botoncillo = document.getElementById('pwd');
+
+let registerData = (data) => {
+    console.log('entre')
     let name = textNombre.value;
     let firtsName = textApelldo.value;
     let emaila = data;
-   
-    firebase.database().ref('reg').push({
-        nombre : name,
-        apellido : firtsName,
-        mail : emaila
-   
+
+    firebase.database().ref('users').push({
+        nombre: name,
+        apellido: firtsName,
+        mail: emaila
+
     });
- } 
+}
 
 
 

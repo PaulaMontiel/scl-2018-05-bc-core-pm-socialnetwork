@@ -1,0 +1,146 @@
+body{
+    background-color: #C7DBD2;
+}
+#loginbox{
+    margin-top:50px;
+    border-radius: 5px;
+}
+#signin{
+    float:right; font-size: 80%;
+    position: relative; 
+    top:-10px;
+}
+.panel-body{
+    padding-top:30px
+}
+#login-alert{
+    display:none;
+}
+.input-group{
+    color: #576363;
+    margin-bottom: 25px;
+    border-radius: 3px;
+}.form-group{
+    margin-top:10px;
+}
+.donthave{
+    padding-top:15px;
+    font-size:85%;
+}
+#loginbox{
+    border: #099;
+}
+.btn-yel{
+    background-color:#85D1AA;
+    border:none;
+    border-radius: 0;
+
+}
+#loginform{
+    background-color:white;
+    padding: 1em;
+}
+.form-horizontal{
+    border: 4px #099;
+    padding-right: 10px;
+}
+.form-control{
+    border-radius: none;
+}
+.tittle{
+    color: 	#57CADC;
+}
+i{
+    text-align: center;
+    padding: 0.5em;
+
+}
+.fa-heartbeat{
+    color:#EC74AA;
+    font-size: 5em;
+}
+.mainLoginInput{
+    height: 40px;
+    padding: 0px;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .mainLoginInput::-webkit-input-placeholder { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color:#576363;
+  }
+  
+  .mainLoginInput::-moz-placeholder  { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color:#716E73;
+  }
+  
+  .mainLoginInput:-ms-input-placeholder  { 
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+  color:#576363;
+  }
+  .fa-user{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .fa-lock{
+      text-align: center;
+      font-size: 1.5em;
+  }
+  .col-lg-4 {
+      text-align: center;
+  }
+  .social-login-btn {
+    background-color: #85D1AA;
+    border-color: #85D1AA;
+    margin: 5px;
+    width: 80%;
+    font-size: 120%;
+    padding: 0;
+  }
+  
+  .social-google {
+    background-color: #da573b;
+    border-color: #be5238;
+  }
+  .social-google:hover{
+    background-color: #be5238;
+    border-color: #9b4631;
+  }
+  
+  .social-twitter {
+    background-color: #1daee3;
+    border-color: #3997ba;
+  }
+  .social-twitter:hover {
+    background-color: #3997ba;
+    border-color: #347b95;
+  }
+  
+  .social-facebook {
+    background-color: #4c699e;
+    border-color: #47618d;
+  }
+  .social-facebook:hover {
+    background-color: #47618d;
+    border-color: #3c5173;
+  }
