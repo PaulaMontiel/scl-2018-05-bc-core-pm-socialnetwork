@@ -11,32 +11,8 @@ $(document).ready(function() {
 		return false;
 	});
 });
-//////////////////////////////////////////////
-/*
-function saveComment(){
- //validar input
- //funcion guardar datos
- //usamos if para que no se imprima vacio
-// set : guardo
-//pedir: get
- if(document.getElementById("comment").value === "")
- {
-     alert("no puede dejar espacios vacios")
-
-     document.removeEventListener("moussemove", saveComment)
 
 
- }
- else {
-
-    let comment = document.getElementById("comment").value;
-    localStorage.setItem(comment);
-
-    //En este punto guardo comentario en mi local storage
- }
-}
-
-*/
 
 //Opción para enviar foto
 function sendPhotoToStorage(){
@@ -55,7 +31,6 @@ function sendPhotoToStorage(){
             console.log("URL del archivo > "+url);
         });
 }
-
 
 
 //creo constante para llamar al boton "btn"
