@@ -18,7 +18,7 @@ invertir. Estos son:
 
 Cuidar nuestra salud debe ser una prioridad durante cualquier etapa de nuestra vida. Esto nos ayudará a tener una calidad de vida excelente en todos los niveles y edades. Según la definición elaborada por la Organización Mundial de la Salud (OMS), “la salud es un estado completo de bienestar físico, mental y social, y no solamente la ausencia de afecciones o enfermedades”.
 
-CareKids es una red social enfocada a compartir informacion sobre la salud integral de los ninos, 
+CareKids es una red social enfocada a compartir informacion sobre la salud integral de los ninos, ya sea para su bienestar fisico como tambien psicologico, todas las personas que tienen un nino a cargo siempre buscan sitios que les permita resolver dudas ya sea de alimentacion, recomendaciones de especialistas, grupos de alguna practica deportiva, y mirada hacia sintomas de algunas enfermedades o virus. Por lo tanto Carekids busca ayuda a crear comunicacion entres todas esas personas que tienen hijos o estan a cargo de un menor con el fin de generar informacion y detalles importantes sobre el cuidado de los ninos.
 
 
 
@@ -33,21 +33,6 @@ para químicos. En esta red social los químicos postean artículos sobre sus
 investigaciones y pueden encontrar el contenido de acuerdo a lo más popular, lo
 reciente o lo más comentado. Además, pueden comentar en los artículos de sus
 colegas y pueden filtrar artículos de acuerdo a determinadas etiquetas.
-
-## Objetivos
-
-El objetivo principal de aprendizaje de este proyecto es construir una
-_interfaz_ web responsive donde podamos leer y escribir data, además de agregar
-más de una sola vista de interacción.
-
-* Esperamos que en este proyecto puedas pensar en el usuario, entendiendo cuál
-  es la red social que cambiará y alegrará sus vidas.
-* Nos interesa que logres entender a las necesidades de los usuarios para los
-  que crearás el producto y los ayudes a resolver esas necesidades.
-* Para esto, deberás poner en juego tu creatividad, podrás generar nuevas ideas
-  que lleven a una solución original y valiosa del problema.
-* Además, cuentas con el apoyo de tus compañeras, debes trabajar junto a ellas,
-  buscando feedback constante para realizar el proyecto.
 
 Tópicos: _mobile-first_, [_responsive_](https://github.com/Laboratoria/curricula-js/tree/master/topics/css/02-responsive),
 _multiple-views_, _crud_, _storage_, ...
