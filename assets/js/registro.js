@@ -1,7 +1,6 @@
 
-document.getElementById("btn-signup").onclick = function () {
-    location.href = "home.html";
-};
+/*document.getElementById("btn-signup").onclick = function () {
+    location.href = "home.html";*/
 
 function registerWithFirebase() {
 
@@ -19,26 +18,10 @@ function registerWithFirebase() {
         });
 }
 
-function ObtenerUser(emailVerified){
-    var user = firebase.auth().currentUser;
-var name, email, photoUrl, uid, emailVerified;
-
-if (user != null) {
-  name = user.displayName;
-  email = user.email;
-  photoUrl = user.photoURL;
-  emailVerified = user.emailVerified;
-  uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-                   // this value to authenticate with your backend server, if
-                   // you have one. Use User.getToken() instead.
- }
-}
-
-let textNombre = document.getElementById('nombre');
-let textApelldo = document.getElementById('Apellido');
+let textNombre = document.getElementById('firstname');
+let textApelldo = document.getElementById('lastname');
 let textEmail = document.getElementById('email');
-let botoncillo = document.getElementById('register');
-let users = document.getElementById('usuarios');
+let botoncillo = document.getElementById('pwd');
 
 let registerData = (data) => {
     console.log('entre')

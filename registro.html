@@ -34,31 +34,31 @@
                     <div class="form-group">
                         <label for="email" class="col-md-3 control-label" >Email</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" name="email" placeholder="Email"required >
+                            <input type="text" class="form-control" id="email" placeholder="Email"required >
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="firstname" class="col-md-3 control-label">Nombre</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" name="firstname" placeholder="Nombre" required >
+                            <input type="text" class="form-control" id="firstname" placeholder="Nombre" required >
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="lastname" class="col-md-3 control-label">Apellido</label>
                         <div class="col-md-9">
-                            <input type="text" class="form-control" name="lastname" placeholder="Apellido" required >
+                            <input type="text" class="form-control" id="lastname" placeholder="Apellido" required >
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="password" class="col-md-3 control-label" >Contraseña</label>
                         <div class="col-md-9">
-                            <input type="password" class="form-control" name="passwd" placeholder="Contraseña" required >
+                            <input type="password" class="form-control" id="pwd" placeholder="Contraseña" required >
                         </div>
                     </div>                                           
                 <div class="container text-center">
                     <form class="form-signin" data-ember-action="2">            
                         <p>
-                        <button id="btn-signup" type="submit" class="btn btn-primary social-login-btn" href='home.html'><i class="icon-hand-right"></i> &nbsp Inscribirse</button><br>
+                        <button id="btn-signup" class="btn btn-primary social-login-btn" type="button" onclick="registerWithFirebase()"><i class="icon-hand-right"></i> &nbsp Inscribirse</button><br>
                         <br>
                         <br> 
                         </p>
@@ -82,7 +82,6 @@
     </script>
 
     <script src="assets/js/registro.js"></script>
-    <!--<script src="js/main.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
     <script src="bootstrap-4.1.1-dist (1)/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

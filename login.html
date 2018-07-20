@@ -26,14 +26,14 @@
                     <form id="loginform" class="form-horizontal" role="form">                                       
                         <div style="margin-bottom: 25px" class="input-group">
                             <i class="fas fa-user"></i>
-                            <input id="login-username" type="text" class="form-control mainLoginInput fontawesome" name="username" value="" placeholder="Correo electrónico">                                        
+                            <input id="email" type="text" class="form-control mainLoginInput fontawesome"placeholder="Correo electrónico">                                        
                         </div>                                      
                         <div class="input-group">
                             <i class="fas fa-lock"></i>
-                            <input id="login-password" type="password" class="form-control mainLoginInput" name="password" placeholder="password" style="font-family:Arial, FontAwesome">
+                            <input id="password" type="password" class="form-control mainLoginInput" placeholder="password" style="font-family:Arial, FontAwesome">
                         </div>                                                                                            
                         <div class="col-sm-12 controls">
-                            <a style = "width: 100%" id="btn-login" href="#" class="btn btn-success btn-yel">Login</a>
+                            <input id="login" type="button" onclick="loginWithFirebase()" value="LOGIN">
                         </div> 
                     </form>   
                     <div class="col-md-12 control" style="background-color: transparent">
@@ -44,14 +44,26 @@
                         </div>
                     </div> 
                     <form class="form-signin" data-ember-action="2">            
-                        <a class="btn btn-primary social-login-btn social-facebook" href="/auth/facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-primary social-login-btn social-google" href="/auth/google"><i class="fab fa-google-plus"></i></a>
+                        <a class="btn btn-primary social-login-btn social-facebook" onclick="facebookLoginWithFirebase()"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-primary social-login-btn social-google" onclick="googleLoginWithFirebase()"><i class="fab fa-google-plus"></i></a>
                         </p>
                     </form>                 
                 </div>                     
             </div>  
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>// Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyApnvAl5MOmnMazHwX7TadUGUx8TFu6ErA",
+            authDomain: "red-social-7fc83.firebaseapp.com",
+            databaseURL: "https://red-social-7fc83.firebaseio.com",
+            projectId: "red-social-7fc83",
+            storageBucket: "red-social-7fc83.appspot.com",
+            messagingSenderId: "72316468469"
+        };
+        firebase.initializeApp(config);</script>
+   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
